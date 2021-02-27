@@ -1,0 +1,185 @@
+@import "normalize";
+
+$grey: #717171;
+$gold: #F2DEAB;
+$white: #fff;
+$black: #000;
+
+body {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+}
+
+p, a {
+    letter-spacing: 0.1em;
+    line-height: 1.27em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    line-height: 1.27em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 10
+}
+
+.header {
+    background: $black;
+    padding-top: 74px;
+    position: relative;
+    color: $white;
+
+    &::after {
+        content: '';
+        display: block;
+        background: url(../img/girl-coce.jpg) no-repeat right top / cover;
+        width: 40%;
+        height: 100%;
+        border-radius: 0 200px 200px 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 830px;
+}
+.logo {
+}
+.others {
+    color: $grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content:'';
+        display: block;
+        background: url('../img/bottle.svg');
+        width: 19px;
+        height: 19px;
+        margin-right: 10px;
+    }
+}
+
+.offer {
+    width: 510px;
+    margin-left: 79px;
+    margin-top: 110px;
+}
+.offer__intro {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+.offer__title {
+    color: $gold;
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+.offer__outro {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: none;
+}
+
+.slides {
+    width: 467px;
+    margin-left: 79px;
+    margin-top: 114px;
+}
+.slides__item {
+
+}
+.slides__item_covid {
+    background: url('../img/coce-drinking.jpg') no-repeat center top / cover;
+    padding: 69px 90px 58px;
+    position: relative;
+}
+
+.slides__title_big {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: $white;
+}
+.slides__item_desc {
+    background: #E12222;
+    padding: 51px;
+}
+.slides__title_small {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.slides__text {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.promo {
+    background: $black;
+    border-radius: 50%;
+    width: 604px;
+    height: 604px;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    margin-top: -302px;
+    z-index: 9;
+    margin-left: 550px;
+
+    &::before {
+        content:'';
+        display: block;
+        border: 1px solid #303030;
+        border-radius: 50%;
+        width: 525px;
+        height: 525px;
+        position: absolute;
+        left: 50%;
+        margin-left: -262px;
+        top: 50%;
+        margin-top: -262px;
+    }
+
+    &::after {
+        content:'';
+        display: block;
+        background: url('../img/blur.png') no-repeat center center;
+        width: 530px;
+        height: 530px;
+        position: absolute;
+        top: 50%;
+        margin-top: -265px;
+        left: 50%;
+        margin-left: -265px;
+    }
+}
+
+.promo img {
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -260px;
+    top: 50%;
+    margin-top: -190px;
+    z-index: 10;
+}
